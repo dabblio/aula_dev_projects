@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.09) 40%, rgb(0, 0, 0) 90%), url("../img/bkg.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 { 
+    position: absolute;
+    transform: translateX(-40dvw) translateY(-45dvh);
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 820px;
+    gap: 42px;
+}
+
+.clock div{
+    height: 280px;
+    width: 220px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(148, 148, 148, 0.064);
+    box-shadow: 10px 10px 30px #000000;
+    border-radius: 10px;
+    letter-spacing: 8px;
+    transition: transform .9s ease;
+    border: 5px dashed rgb(211, 211, 211);
+
+    &:hover{
+        animation: float 2s ease-in-out infinite alternate;
+        scale: 1.1;
+    }
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.clock span.time {
+    font-size: 10px;
+}
+
+#hours{
+    font-size: 90px;
+}
+
+#minutes {
+ font-size: 90px;
+}
+
+#seconds {
+    font-size: 90px;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 16px;
+    color: white;
+    align-self: end;
+}
+
+footer p {
+    color: #ffffffce;
+    font-size: 18px;
+    font-weight: bolder;
+
+    &:hover{
+        scale: 1.1;
+        transform: translateY(-5px);
+        transition: 0.8s all;
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
