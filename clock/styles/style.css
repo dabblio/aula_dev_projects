@@ -97,7 +97,7 @@ footer p {
     &:hover{
         scale: 1.1;
         transform: translateY(-5px);
-        transition: 0.8s all;
+        transition: 1s ease-in-out all;
     }
 }
 
