@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Entrar | Login</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="container" id="container">
+        <div>
+          <div class="form-container sign-up-container">
+            <form action="#" class="input-signup">
+              <h1>Crie uma conta</h1>
+                  <input type="text" placeholder="Nome" required/>
+                  <input type="email" placeholder="Email" required/>
+                  <div class="password-wrapper">
+                    <input type="password" class="password-input" placeholder="Senha" required />
+                    <button type="button" class="pwd-toggle" aria-label="Mostrar senha">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </div>
+                  <div class="btn-grad">Cadastrar</div>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form action="#">
+              <h1>Entrar</h1>
+              <div class="input-signin">
+                    <input type="email" id="email" placeholder="Email" />
+                    <div class="password-wrapper">
+                      <input type="password" class="password-input" placeholder="Senha" required />
+                      <button type="button" class="pwd-toggle" aria-label="Mostrar senha">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </div>
+                    <a href="#">Esqueceu sua senha?</a>
+                    <div class="btn-grad">Entrar</div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1>Bem-vindo de volta!<br><span class="wave-emoji">&#128075;</span></h1>
+                <p>Vamos continuar de onde parou. <span class="bar-type"></span></p>
+                <div class="btn-grad" id="signIn">Entrar</div>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1>Olá, bem-vindo!<br><span class="wave-emoji">&#128075;</span></h1>
+                <p>Junte-se a nós em uma nova aventura. <span class="bar-type"></span></p>
+                <div class="btn-grad" id="signUp">Cadastrar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

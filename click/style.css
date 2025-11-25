@@ -1,0 +1,109 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.09) 40%, rgb(0, 0, 0) 90%), url("https://wallpapercave.com/wp/wp9657802.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px #000000a8;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            min-width: 300px;
+        }
+
+        h1 {
+            color: #000000b6;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        #contador {
+            font-size: 80px;
+            font-weight: bold;
+            color: #cccccc;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        #diminuir {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        #diminuir:hover {
+            background: #ee5a52;
+            transform: scale(1.05);
+        }
+
+        #resetar {
+            background: #95a5a6;
+            color: white;
+        }
+
+        #resetar:hover {
+            background: #7f8c8d;
+            transform: scale(1.05);
+        }
+
+        #aumentar {
+            background: #51cf66;
+            color: white;
+        }
+
+        #aumentar:hover {
+            background: #40c057;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .positivo {
+            color: #63ff7d !important;
+        }
+
+        .negativo {
+            color: #ff6b6b !important;
+        }
+
+        .zero {
+            color: #adadad !important;
+        }
