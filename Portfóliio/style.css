@@ -1,79 +1,291 @@
-*{
-    font-family:'Courier New', Courier, monospace;
-    cursor: pointer;
-}
-
-body {
-}
-/* Header*/
-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #c7c7c7;
-    height:10%;
-}
-
-.logo-group{
-    display: flex;
-    align-items: center;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    cursor: default;
 }
 
-.logo-group img{
-    height: 40px;
-    margin-right: 3px;
+body {/* corpo da página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    line-height: 1.6;
+
+    color: black;
+
+    background-color: #fcfcfc;
+
+    /* background-color: blue; */
 }
 
-.name-logo p{
-    border-color: #07556d;
+header {/* cabeçalho */
+    background: rgb(0, 0, 255);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: start;
+    box-shadow: black;
+    border-bottom: 2px solid #0038df;
 }
 
-.name-logo b{
-    background: #07556d;
-    padding-right: 5px;
-    color:white;
+header span {
+    background-color: white;
+    color: blue;
+    padding: 0px 3px;
+    margin-left: 5px;
+    border-radius: 5px;
 }
 
-.bar-nav{
-    flex-grow: 1;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: -0.5rem;
 }
 
-.nav-list{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    width:max-content
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
-.nav-list li{
-    margin: 10px;
+
+/* main (conteúdo principal) */
+
+main {
+    padding: 2rem;
+
+    margin: 0 auto;
+
+    max-width: 1200px;
 }
 
-/*HERO*/
-
-.hero{
-    display: relative;
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: black;
 }
 
-.hero-image-background img{
-    width: 100%;
-    opacity: 30%;
+section h2 {
+    color: blue;
+    font-size: 2rem;
+    margin: 0 auto 1rem auto;
+    /* centraliza horizontalmente quando houver largura disponível */
+    border-bottom: 3px solid blue;
+    padding-bottom: 0.5rem;
+    display: table;
+    /* permite que margin:auto centralize o título */
+    text-align: center;
+    /* garante que o conteúdo interno do h2 fique centralizado */
+}
+
+section p {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.sobre {
+    align-content: center;
+    box-shadow: 1px 1px 10px #ececec;
+}
+
+.sobre p {
+    text-align: center;
+    margin: 0 50px;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     object-fit: cover;
-    display:block;
+    margin-bottom: 1rem;
+    border: 5px solid rgb(238, 238, 238);
+    box-shadow: red;
+    transition: transform 0.3s ease, border 0.2s ease, box-shadow 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 50px;
+.foto-perfil:hover {
+    transform: translateY(-10px);
+    border: 3px solid rgb(142, 142, 255);
+    box-shadow: 0 2px 20px blue;
 }
+
+/* SEÇÃO HABILIDADES */
+
+.habilidade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.habilidades {
+    box-shadow: 1px 1px 10px #ececec;
+}
+
+.habilidade-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.habilidade-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.habilidade-card p {
+    color: white;
+}
+
+/* SEÇÃO DE PROJETOS */
+
+.projetos {
+    box-shadow: 1px 1px 10px #ececec;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projetos-card {
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    padding: 1.5rem;
+
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projetos-card:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+}
+
+
+.projetos-card h3 {
+    color: #2563eb;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.projetos-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.projetos-card a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+/* SEÇÃO CONTATO */
+
+.contato {
+    box-shadow: 1px 1px 10px #ececec;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #667eea;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: scale 0.5s ease, background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    scale: 1.1;
+    background-color: blue;
+}
+
+footer p { /* RODAPÉ */
+    background: rgb(43, 43, 53);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: black;
+    height: 100px;
+    align-content: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .habilidade-grid, /* para ajustar mais de um elemento, se adiciona vírgula */
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+        margin-bottom: 3px;
+    }
+
+    header span{
+        font-weight: 1000;
+    }
+
+    section p{
+        font-weight: 600;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+}
+
