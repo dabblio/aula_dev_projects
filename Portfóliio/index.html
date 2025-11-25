@@ -1,50 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dabbl.io | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+
+<head> <!-- METADADOS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dabbl.io | Portfólio</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo-group">
-            <div>
-                <img src="logo.png">
-            </div>
-            <div class="name-logo">
-                <p>Dabbl<span><b>.io</b></span></p>
-            </div>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Dabbl<span>.io</span></h1>
+
+    <p>Desenvolvimento Web | Full Stack</p>
+
+  </header>
+
+  <main><!-- CONTEÚDO PRINCIPAL -->
+
+    <section id="sobre" class="sobre">
+
+      <img src="image.png" alt="foto de perfil" class="foto-perfil">
+
+      <h2>Sobre mim</h2>
+
+      <p>Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Com formação em Desenvolvimento Web, tenho experiência em desenvolvimento front-end e back-end, sempre buscando aprender novas
+        tecnologias e melhorar minhas habilidades.<br><br>
+
+        Atualmente, estou focado em Desenvolver Sites para Empresas, mas sempre estarei aberto a novos desafios e oportunidades de
+        colaboração.</p>
+
+    </section>
+
+    <section id="habilidades" class="habilidades">
+
+      <h2>Habilidades</h2>
+
+      <div class="habilidade-grid">
+
+        <div class="habilidade-card">
+          <h3> Front-end</h3>
+          <p>HTML5, CSS3, JavaScript</p>
         </div>
-        <div class="bar-nav">
-            <ul class="nav-list">
-                <li><a>Sobre Mim</a></li>
-                <li><a>Projetos</a></li>
-                <li><a>Serviços</a></li>
-                <li><a>Contato</a></li>
-            </ul>
+
+        <div class="habilidade-card">
+          <h3> Back-end</h3>
+          <p>Node.js,Express</p>
         </div>
-        <div class="image-background"></div>
-    </header>
-    <main>
-        <div class="hero">
-            <div class="hero-image-background">
-                <img src="src/hero-image.png">
-            </div>
-            <div class="hero-text">
-                <p>Olá pessoas,</p>
-                <H1>EU SOU UM<br>PROGRAMADOR</H1>
-                <p>Seja bem-vindo ao meu portfólio</p>
-            </div>
-            <img>
+
+        <div class="habilidade-card">
+          <h3> Banco de Dados</h3>
+          <p>MySQL</p>
         </div>
-        <div id="about-me" class="about-me">
-            <h1>Sobre Mim</h1>
-            <p>Olá!! Meu nome é Walisson Saantos</p>
+
+        <div class="habilidade-card">
+          <h3> Ferramentas</h3>
+          <p>Git, GitHub, VS Code</p>
         </div>
-        <div id="projects"></div>
-        <div id="services"></div>
-        <div id="contacts"></div>
-    </main>
+
+      </div>
+
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projetos-card">
+          <h3> Projeto 1 - Página de Portfólio Pessoa (HTML + CSS) </h3>
+          <p>Criar uma página simples e bonita para apresentação pessoal.</p>
+          <p>Tecnologias: HTML, CSS</p>
+          <a href="http://">Ver Projetos ></a>
+        </div>
+        <div class="projetos-card">
+          <h3> 🌐 Projeto 2 – Calculadora Interativa (HTML + CSS + JavaScript)</h3>
+          <p>Lógica de programação e manipulação do DOM.</p>
+          <p>Tecnologias: HTML5, CSS3, JavaScript</p>
+          <a href="http://">Ver Projetos ></a>
+        </div>
+        <div class="projetos-card">
+          <h3> ✔ Projeto 3 – Lista de Tarefas (To-Do List)</h3>
+          <p>Mostrar como armazenar dados e criar interatividade real.</p>
+          <p>Tecnologias: HTML, CSS, JavaScript</p>
+          <a href="http://">Ver Projetos ></a>
+        </div>
+        <div class="projetos-card">
+          <h3>Projeto 4 – Página com Autenticação Simples (Login Local)</h3>
+          <p>Mostrar como armazenar dados e criar interatividade real.</p>
+          <p>Tecnologias: JavaScript + Servidor (Node.js ou simulação local)</p>
+          <a href="http://">Ver Projetos ></a>
+        </div>
+        <div class="projetos-card">
+          <h3>Projeto 5 – Mini Blog com Servidor (Node.js + HTML/CSS/JS)</h3>
+          <p>Tecnologias: Rotas no servidor Templates (EJS ou Handlebars) Armazenamento de dados (JSON ou SQLite) Deploy
+            local</p>
+          <a href="http://">Ver Projetos ></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO-->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <div class="contato-info">
+        <p>📧 Email: dabblew.wal@gmail.com</p>
+        <p>📱 Telefone: (85) 98824-1075</p>
+        <p>📍 Localização: Meruoca, Ceará</p>
+        <div class="social-links">
+          <a href="http://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+          <a href="http://github.com" target="_blank" class="social-btn">GitHub</a>
+          <a href="http://instagram.com" target="_blank" class="social-btn">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer><!-- RODAPÉ -->
+    <p>© 2025 Dabbl.io. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
+
 </html>
